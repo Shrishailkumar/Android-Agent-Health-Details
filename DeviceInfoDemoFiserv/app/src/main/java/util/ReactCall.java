@@ -66,7 +66,7 @@ public class ReactCall {
         /**
          publish Agent HealthCheck
          **/
-        /*Call<ResponseHealthCheck> responseHealthCheckCall = apiInterface.publishPOSHealthCheck(agentHealthInfo);
+        Call<ResponseHealthCheck> responseHealthCheckCall = apiInterface.publishPOSHealthCheck(agentHealthInfo);
         responseHealthCheckCall.enqueue(new Callback<ResponseHealthCheck>() {
             @Override
             public void onResponse(Call<ResponseHealthCheck> call, Response<ResponseHealthCheck> response) {
@@ -79,12 +79,12 @@ public class ReactCall {
             public void onFailure(Call<ResponseHealthCheck> call, Throwable t) {
                 responseHealthCheckCall.cancel();
             }
-        });*/
+        });
 
         /**
          Create new user
          **/
-        User user = new User("Shrishailkumar", "Maddaraki");
+        /*User user = new User("Shrishailkumar", "Maddaraki");
         Call<User> call1 = apiInterface.createUser(user);
         call1.enqueue(new Callback<User>() {
             @Override
@@ -99,7 +99,7 @@ public class ReactCall {
             public void onFailure(Call<User> call, Throwable t) {
                 call.cancel();
             }
-        });
+        });*/
     };
 
     public void disposeEtaUpdate() {

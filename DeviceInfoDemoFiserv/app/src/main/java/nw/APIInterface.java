@@ -17,8 +17,8 @@ public interface APIInterface {
     @POST("/api/publishPOSHealthCheck")
     Call<ResponseHealthCheck> publishPOSHealthCheck(@Body AgentHealthInfo agentHealthInfo);
 
-    @POST("/api/users")
-    Call<User> createUser(@Body User user);
+    /*@POST("/api/users")
+    Call<User> createUser(@Body User user);*/
 
 /*    @GET("/api/users?")
     Call<UserList> doGetUserList(@Query("page") String page);
